@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="http://sc.it-academy.by/fe/form.php" method="post">
+    <table>
+        <tr>
+            <td>
+                <h1>Простая форма поиска с вариантами:</h1>
+                <fieldset>
+                    <legend>Строка поиска</legend>
+                    <input type="text" name="search" max="10">
+                    <input type="submit" name="go" value="Искать"><br>
+                    <input type="checkbox" name="google"><label>В google</label>
+                    <input type="checkbox" name="site"><label>На сайте</label>
+                </fieldset>
+                <h1>Простая форма авторизации:</h1>
+                <fieldset>
+                    <legend>Авторизируйтесь</legend>
+                    <input type="text" name="login"><label>* Логин</label><br>
+                    <input type="password" name="password"><label>* Пароль</label><br>
+                    <input type="checkbox" name="in_system"><label>Остаться в системе</label><br>
+                    <input type="submit" name="invite" value="Войти">
+                </fieldset>
+                <h1>Отзыв:</h1>
+                <fieldset>
+                    <legend>Оставьте Ваш отзыв</legend>
+                    <input type="text" name="name"><label>* Имя</label><br>
+                    <input type="email" name="email"><label>* e-mail</label><br>
+                    <textarea name="otz" cols="30" rows="10"></textarea>><br>
+                    <input type="submit" name="put" value="Отправить">
+                </fieldset>
+                <h1>Загрузка файла на сервер:</h1>
+                <fieldset>
+                    <legend>Upload</legend>
+                    <label>File:</label><br>
+                    <input type="file" name="file"><br>
+                    <legend>Срок хранения (года):</legend>
+                    <input type="number" name="year">
+                    <input type="submit" name="download" value="Загрузить">
+                </fieldset>
+            </td>
+            <td>
+                <h1>Простая форма поиска с вариантами:</h1>
+                <fieldset>
+                    <legend>Строка поиска</legend>
+                    <input type="text" name="search" max="10">*
+                    <input type="submit" name="go" value="Искать"><br>
+                    <input type="checkbox" name="google"><label>В google</label>
+                    <input type="checkbox" name="site"><label>На сайте</label>
+                </fieldset>
+                <h1>Опрос(голосование):</h1>
+                <fieldset>
+                    <legend>Как вам?</legend>
+                    <label>
+                        <input type="radio" name="mood" value="2013.12.31" checked> Ничего
+                        </label><br>
+                        <label>
+                            <input type="radio" name="mood" value="2013.12.31" checked> Неплохо
+                            </label><br>
+                            <label>
+                                <input type="radio" name="mood" value="2013.12.31" checked> Хорошо
+                                </label><br>
+                                <label>
+                                    <input type="radio" name="mood" value="2013.12.31" checked> Супер
+                                    </label><br>
+                                    <input type="submit" name="put" value="Отправить">
+                </fieldset>
+                <h1>Выпадающий и мульти списки:</h1>
+                <fieldset>
+                    <legend>Дата рождения</legend>
+                    <input type="text" maxlength="4" value="2000"><br>
+                </fieldset>
+                <fieldset>
+                    <select name="select">
+                        <option value="b">Брест</option>
+                        <option value="m">Минск</option>
+                        <option value="g">Гродно</option>
+                        <option value="v">Витибск</option>
+                    </select>
+                    <legend>Города РБ</legend>
+                    <select name="town" id="town" multiple>
+                        <optgroup label="Города РБ">
+                            <option value="1">Брест</option>
+                            <option value="2">Минск</option>
+                            <option value="3">Витебск</option>
+                        </optgroup>
+                        <optgroup label="Города России">
+                            <option value="4">Москва</option>
+                            <option value="5">Рязань</option>
+                            <option value="6">Магадан</option>
+                            <input type="submit" name="put" value="Ок">
+                        </optgroup>
+                    </select>
+                </fieldset>
+                <h1>Валидация данных HTML5:</h1>
+                <fieldset>
+                    <legend>Строка поиска</legend>
+                    <input type="text" name="insert"><br>
+                    <input type="number" name="phone_number"><br>
+                    <input type="submit" name="put" value="Проверить">
+                </fieldset>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
