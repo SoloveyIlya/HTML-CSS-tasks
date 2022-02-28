@@ -8,12 +8,9 @@
 </head>
 <body>
     <h1>Горизонтальное меню</h1>
-    <a href="#">Главная</a>
-    <a>|</a>
-    <a href="#">Каталог</a>
-    <a>|</a>
-    <a href="#">Акции</a>
-    <a>|</a>
+    <a href="#">Главная</a>|
+    <a href="#">Каталог</a>|
+    <a href="#">Акции</a>|
     <a href="#">О нас</a>
     <h1>Меню список</h1>
     <ul>
@@ -83,19 +80,60 @@
         </ul>
     </ul>  
     <h1>Меню таблица с вложенными таблицами</h1> 
-    <pre>
-    <a href="#">Главная</a>
-        <a href="#">Новости</a>
-    <a href="#">Каталог</a>
-        <a href="#">Осень-Зима</a>
-        <a href="#">Весна-Лето</a>
-    <a href="#">Акции</a>
-        <a href="#">Актуальные</a>
-        <a href="#">Прошедшие</a>
-    <a href="#">О нас</a>
-        <a href="#">Контакты</a>
-        <a href="#">Проезд</a>
-
-    </pre> 
+    <table>
+        <tr>
+            <th align="left">
+                <a href="#">Главная</a>
+            </th>
+        </tr>
+        <tr>
+            <td align="right">
+                <a href="#">Новости</a>
+            </td>
+        </tr>
+        <tr>
+            <th align="left">
+                <a href="#">Каталог</a>
+            </th>
+        <tr>
+                <td align="right">
+                    <a href="#">Осень-Зима</a>
+                </td>
+        </tr>
+        <tr>
+                <td align="right">
+                    <a href="#">Весна-Лето</a>
+                </td>
+        </tr>
+        <tr>
+            <th align="left">
+                <a href="#">Акции</a>
+            </th>
+        </tr>
+        <tr>
+            <td align="right">
+                <a href="#">Актуальные</a>
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                <a href="#">Прошедшие</a>
+            </td>
+        </tr>
+        <tr>           
+            <th align="left">
+                <a href="#">О нас</a>
+            </th>
+        <tr align="right">
+            <td>
+                <a href="#">Контакты</a>
+            </td>
+        </tr>
+        <tr>
+            <td align="right"s>
+                <a href="#">Проезд</a>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>
